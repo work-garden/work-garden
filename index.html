@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Work Garden Kochi</title>
+<style>
+body{font-family:Arial;background:#f0fdf4;margin:0;text-align:center}
+header{background:#166534;color:white;padding:25px}
+.box{background:white;margin:20px auto;max-width:400px;padding:20px;border-radius:15px;box-shadow:0 4px 10px #0001}
+input,select{width:90%;padding:12px;margin:8px;border:1px solid #ccc;border-radius:8px}
+button{background:#16a34a;color:white;padding:12px 20px;border:none;border-radius:8px;width:90%;font-size:16px}
+#bill{background:#dcfce7;padding:15px;border-radius:10px;margin-top:15px;font-size:20px;font-weight:bold}
+</style>
+</head>
+<body>
+<header>
+<h1>🌿 Work Garden Kochi</h1>
+<p>Landscaping & Garden Care in Kochi</p>
+</header>
+
+<div class="box">
+<h2>🧮 Bill Calculator</h2>
+<input id="area" type="number" placeholder="Lawn Area (sq ft) eg: 500">
+<select id="type">
+<option value="2">Lawn Maintenance - ₹2 / sq ft</option>
+<option value="15">Garden Design - ₹15 / sq ft</option>
+<option value="5">Tree Trimming - ₹5 / sq ft</option>
+</select>
+<select id="freq">
+<option value="1">Monthly - 1x</option>
+<option value="2">Bi-Weekly - 2x</option>
+<option value="4">Weekly - 4x</option>
+</select>
+<button onclick="calc()">Calculate
