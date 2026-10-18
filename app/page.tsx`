@@ -1,0 +1,43 @@
+export default function Home() {
+  return (
+    <div style={{fontFamily:'system-ui', background:'#f0fdf4', minHeight:'100vh'}}>
+      
+      {/* HEADER WITH PHOTO */}
+      <div style={{position:'relative', height:'300px', overflow:'hidden'}}>
+        <img src="https://images.unsplash.com/photo-1416879595882-3373a0480b5b?w=800" 
+             style={{width:'100%', height:'100%', objectFit:'cover'}} alt="Garden"/>
+        <div style={{position:'absolute', bottom:'0', left:'0', right:'0', background:'linear-gradient(transparent, rgba(0,0,0,0.8))', padding:'20px'}}>
+          <h1 style={{color:'white', fontSize:'32px', margin:'0'}}>🌱 Sneha Garden Work</h1>
+          <p style={{color:'white', margin:'5px 0 0 0'}}>Kochi Best Garden Service</p>
+        </div>
+      </div>
+
+      <div style={{maxWidth:'600px', margin:'-20px auto 0', background:'white', borderRadius:'20px 20px 0 0', padding:'25px', position:'relative'}}>
+
+        {/* WHATSAPP BUTTON */}
+        <a href="https://wa.me/919605525083" 
+           style={{display:'block', background:'#25D366', color:'white', padding:'16px', borderRadius:'30px', textDecoration:'none', fontWeight:'bold', textAlign:'center', fontSize:'18px', marginBottom:'20px'}}>
+           📱 9605525083 - WhatsApp
+        </a>
+
+        {/* SERVICES WITH PHOTOS */}
+        <h3>ഞങ്ങളുടെ Plants:</h3>
+        <div style={{display:'grid', gridTemplateColumns:'1fr 1fr', gap:'12px'}}>
+          <div style={{borderRadius:'12px', overflow:'hidden', border:'1px solid #eee'}}>
+            <img src="https://images.unsplash.com/photo-1459411556631-70dc20c3d6aa?w=400" style={{width:'100%', height:'120px', objectFit:'cover'}}/>
+            <div style={{padding:'10px'}}><b>🌹 റോസ്</b><br/>100rs+</div>
+          </div>
+          <div style={{borderRadius:'12px', overflow:'hidden', border:'1px solid #eee'}}>
+            <img src="https://images.unsplash.com/photo-1485955900006-10f4d324d411?w=400" style={{width:'100%', height:'120px', objectFit:'cover'}}/>
+            <div style={{padding:'10px'}}><b>🏡 Money Plant</b><br/>200rs+</div>
+          </div>
+        </div>
+
+        <div style={{background:'#f9fafb', padding:'15px', borderRadius:'12px', marginTop:'20px', textAlign:'center', fontSize:'14px', color:'#666'}}>
+          📍 Kochi | 📞 9605525083 | 7AM-7PM
+        </div>
+
+      </div>
+    </div>
+  )
+}
